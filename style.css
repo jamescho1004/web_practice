@@ -1,0 +1,30 @@
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;	
+}
+a {
+	color: wheat;
+	background-color: tomato;
+	border-radius: 10px;
+	padding: 3px 5px;
+	font-size: 55px;
+	text-decoration: none;
+	animation: sexyFlip 4s ease-in-out infinite;
+}
+@keyframes sexyFlip {
+	0% {
+		transform: rotatex(0);
+	}
+	
+	50% {
+		color: tomato;
+		background-color: wheat;
+		transform: rotatey(360deg);
+	}
+	
+	100% {
+		transform: rotatex(0);
+	}
+}
